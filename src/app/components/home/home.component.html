@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page Universitas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" class="h-12" alt="Logo" />
+        <div>
+          <h1 class="text-2xl text-primary font-bold">POLINEMA</h1>
+          <p class="text-sm text-primary -mt-1 font-medium">PSDKU LUMAJANG</p>
+        </div>
+      </div>
+      <ul class="hidden md:flex space-x-8 font-medium text-primary">
+        <li><a href="#" class="hover:text-secondary">Home</a></li>
+        <li><a href="#" class="hover:text-secondary">Profil</a></li>
+        <li><a href="#" class="hover:text-secondary">Akademik</a></li>
+        <li><a href="#" class="hover:text-secondary">Alumni</a></li>
+        <li><a href="#" class="hover:text-secondary">Career App</a></li>
+        <li><a href="#" class="hover:text-secondary">Contact</a></li>
+      </ul>
+      <button class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative w-full h-screen flex items-center pt-24">
+    <img src="hero-2.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Hero Image" />
+
+    <!-- Gradiasi BG White -->
+    <div class="absolute inset-x-0 bg-gradient-to-t from-white/95 to-white/10 h-2/4  bottom-0"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row items-center md:items-start justify-between">
+
+      <!-- JUDUL DI SEBELAH KIRI -->
+      <div class="md:w-1/2">
+        <h1 class="text-5xl md:text-6xl mt-20 pt-60 font-extrabold text-primary leading-tight font-[Poppins]">
+          Polinema <br />
+          <span class="text-primary">PSDKU </span>
+          <span class="text-500 font-bold bg-gradient-to-r from-[#4E69B7] to-[#14F3D9] bg-clip-text text-transparent">Lumajang</span>
+        </h1>
+      </div>
+
+      <!-- KETERANGAN DI SEBELAH KANAN -->
+      <div class="md:w-1/2 mt-6 md:mt-0 text-end font-[Poppins]">
+        <p class="text-primary font-bold text-lg mt-20 pt-60">
+          Berdiri dari tahun 2012, <br />
+          Awalnya bernama AKLN <br />
+          Menjadi Polinema di tahun 2019
+        </p>
+
+        <button class="mt-6 bg-primary text-white px-6 py-3 rounded-md shadow hover:bg-blue-800 transition inline-flex items-center space-x-2">
+          <span>Selengkapnya</span>
+          <span>➡️</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+        <!-- SECTION PENGUMUMAN -->
+  <section class="w-full max-w-7xl mx-auto px-6 mt-32 mb-20 font-[Poppins]">
+  <div class="flex flex-col md:flex-row gap-10">
+
+    <!-- BAGIAN KIRI -->
+    <div class="md:w-1/2 w-full">
+      <img src="pengumuman1.png" class="w-full h-auto rounded-lg shadow" />
+
+      <!-- ICON GRID -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+        <div class="bg-primary text-white rounded-lg py-4 px-2 text-center shadow">
+          <div class="text-3xl mb-1">🧑‍🏫</div>
+          <p class="text-sm font-semibold">Dosen & Staff</p>
+        </div>
+        <div class="bg-primary text-white rounded-lg py-4 px-2 text-center shadow">
+          <div class="text-3xl mb-1">🎓</div>
+          <p class="text-sm font-semibold">Mahasiswa</p>
+        </div>
+        <div class="bg-primary text-white rounded-lg py-4 px-2 text-center shadow">
+          <div class="text-3xl mb-1">🤝</div>
+          <p class="text-sm font-semibold">Mitra</p>
+        </div>
+        <div class="bg-primary text-white rounded-lg py-4 px-2 text-center shadow">
+          <div class="text-3xl mb-1">👥</div>
+          <p class="text-sm font-semibold">Alumni</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BAGIAN KANAN (SLIDER) -->
+    <div class="md:w-1/2 w-full flex flex-col items-center">
+
+      <h1 class="w-full text-center text-[50px] bg-primary text-white py-3 rounded-md font-bold mb-4">
+        PENGUMUMAN
+      </h1>
+
+      <div class="relative w-full overflow-hidden">
+        <div id="sliderWrapper" class="flex transition-all duration-500 w-[60%]">
+          <img src="pengumuman2-1.png" class="w-[75%] rounded-lg shadow mr-3" />
+          <img src="pengumuman2-2.png" class="w-[75%] rounded-lg shadow mr-3" />
+          <img src="pengumuman2-1.png" class="w-[75%] rounded-lg shadow mr-3" />
+        </div>
+
+        <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-blue-700 p-3 rounded-full shadow">
+          ←
+        </button>
+
+        <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-blue-700 p-3 rounded-full shadow">
+          →
+        </button>
+      </div>
+
+      <div class="flex gap-2 mt-4">
+        <span class="dot w-3 h-3 bg-blue-400 rounded-full"></span>
+        <span class="dot w-3 h-3 bg-blue-300 rounded-full"></span>
+        <span class="dot w-3 h-3 bg-blue-300 rounded-full"></span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION INFO -->
+<section class="relative w-full h-[350px] md:h-[420px] flex items-center justify-center mt-20">
+
+  <!-- Background Image -->
+  <img src="bg-info.png"
+       class="absolute inset-0 w-full h-full object-cover" />
+
+  <!-- Overlay warna biru transparan -->
+  <div class="absolute inset-0 bg-primary/60"></div>
+
+  <!-- Konten -->
+  <div class="relative text-center text-white px-6">
+      <p class="text-lg md:text-xl font-semibold mb-3">
+          Program Studi di Luar Kampus Utama
+      </p>
+
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">
+          Cari tau cara bergabung di polinema kampus Lumajang
+        </h1>
+
+      <button class="px-6 py-2 border border-white rounded-full hover:bg-white hover:text-primary
+                     transition font-semibold">
+        Kehidupan Kampus
+      </button>
+  </div>
+
+</section>
+
+<!-- SECTION BERITA -->
+<section class="bg-white py-12 px-4 md:px-8 lg:px-16">
+  <div class="max-w-7xl mx-auto">
+    <h1 class="text-2xl font-bold text-black text-[40px] mb-6">Berita</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Berita Utama -->
+      <div class="lg:col-span-2">
+        <div class="flex flex-col md:flex-row gap-4">
+          <img src="berita-5.png" alt="Berita Utama" class="w-full md:w-2/4 object-cover rounded-lg">
+          <div class="flex-1 j">
+            <p class="text-sm text-gray-500 mb-2">13 November 2025</p>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Tim pengabdian Polinema Kembangkan Sistem Digital untuk Optimalkan Event Bersepeda</h3>
+            <p class="text-gray-600 text-sm">Inisiatif ini bertujuan untuk meningkatkan efisiensi dan partisipasi dalam kegiatan bersepeda komunitas...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Daftar Berita Lain -->
+      <div class="space-y-6">
+        <!-- Item Berita -->
+        <div class="flex gap-4">
+          <img src="berita-1.png" alt="UMKM Tuffero" class="w-24 h-24 object-cover rounded-lg">
+          <div>
+            <p class="text-sm text-gray-500">13 November 2025</p>
+            <h4 class="text-sm font-semibold text-gray-800">Polinema Dampingi UMKM Tuffero Bangun Website Profil untuk Perkuat Daya Saing</h4>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <img src="berita-2.png" alt="ICCF Nusantaraya" class="w-24 h-24 object-cover rounded-lg">
+          <div>
+            <p class="text-sm text-gray-500">8 November 2025</p>
+            <h4 class="text-sm font-semibold text-gray-800">Polinema Tampilkan Inovasi Digital dalam ICCF Nusantaraya 2025 di Malang Creative Center</h4>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <img src="berita-3.png" alt="Mesin Pencacah" class="w-24 h-24 object-cover rounded-lg">
+          <div>
+            <p class="text-sm text-gray-500">7 November 2025</p>
+            <h4 class="text-sm font-semibold text-gray-800">Inovasi Mesin Pencacah Polinema Tingkatkan Efisiensi Pengolahan Pakan Bebek di Desa Pandesari</h4>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <img src="berita-4.png" alt="PKM OSS" class="w-24 h-24 object-cover rounded-lg">
+          <div>
+            <p class="text-sm text-gray-500">13 November 2025</p>
+            <h4 class="text-sm font-semibold text-gray-800">Tim PKM Polinema Dampingi UMKM Urus Legalitas Usaha Melalui Online Single Submission (OSS)</h4>
+          </div>
+        </div>
+
+        <a href="#" class="text-primary text-sm font-medium hover:underline block mt-4">Lihat semua →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-primary text-white pt-12 pb-6 px-4 md:px-8 lg:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Kolom 1: Logo + Sosial Media -->
+    <div>
+      <!-- Logo -->
+      <div class="mb-4 md:mask-contain">
+        <img src="logo-footer.png" alt="Logo Polinema" class=" md:h-20 lg:h-40 w-auto">
+      </div>
+      <!-- Ikuti Kami -->
+      <h3 class="text-lg font-semibold mb-4">Ikuti kami:</h3>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-whatsapp text-xl"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter text-xl"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook text-xl"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram text-xl"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fas fa-envelope text-xl"></i></a>
+      </div>
+    </div>
+
+    <!-- Kolom 2: Navigasi -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+        <li><a href="#" class="hover:underline">Klien Kami</a></li>
+        <li><a href="#" class="hover:underline">Kebijakan Privasi</a></li>
+        <li><a href="#" class="hover:underline">Ketentuan Kami</a></li>
+        <li><a href="#" class="hover:underline">Hubungi Kami</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Lokasi -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Lokasi</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.6240478163772!2d113.24019817455954!3d-8.139700581504718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd667609cb4bd39%3A0xa38484bf8f293e32!2sPolinema%20Kampus%20Lumajang!5e0!3m2!1sid!2sid!4v1764555169908!5m2!1sid!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p class="text-sm mt-2">Widyawisda, Karang Semanding, Kepuharjo, Lumajang, Jawa Timur 67316</p>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="mt-8 text-right text-xs text-gray-300 justify-end">
+    © 2025 dibuat oleh kelompok 2
+  </div>
+</footer>
+
+
+</body>
+  <script>
+      let index = 0;
+      const slides = document.querySelectorAll('#sliderWrapper img');
+      const wrapper = document.getElementById('sliderWrapper');
+      const dots = document.querySelectorAll('.dot');
+
+      function updateSlide() {
+      wrapper.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((d,i)=>d.classList.toggle('bg-blue-400', i===index));
+      dots.forEach((d,i)=>d.classList.toggle('bg-blue-300', i!==index));
+      }
+
+      document.getElementById('nextBtn').onclick = () => {
+      index = (index + 1) % slides.length;
+      updateSlide();
+      };
+
+      document.getElementById('prevBtn').onclick = () => {
+      index = (index - 1 + slides.length) % slides.length;
+      updateSlide();
+      };
+</script>
+</html>

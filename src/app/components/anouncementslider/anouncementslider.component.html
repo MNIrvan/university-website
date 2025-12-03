@@ -1,0 +1,18 @@
+<section class="py-10 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-xl font-bold mb-4">Pengumuman</h2>
+
+      <ng-template swiperSlide *ngFor="let s of slides">
+        <div class="flex gap-4 items-start">
+          <img [src]="s.img" alt="slide" class="w-40 h-28 object-cover rounded-md shadow-sm hidden sm:block">
+          <div>
+            <h3 class="font-semibold text-md">{{ s.title }}</h3>
+            <p class="text-sm text-gray-600 mt-1">{{ s.subtitle }}</p>
+            <a href="#" class="inline-block mt-2 text-primary text-sm font-medium">Detail</a>
+          </div>
+        </div>
+      </ng-template>
+
+      <!-- pagination/navigation bisa diaktifkan via config jika mau -->
+  </div>
+</section>

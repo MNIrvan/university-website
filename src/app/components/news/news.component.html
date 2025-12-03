@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page Universitas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" class="h-12" alt="Logo" />
+        <div>
+          <h1 class="text-2xl text-primary font-bold">POLINEMA</h1>
+          <p class="text-sm text-primary -mt-1 font-medium">PSDKU LUMAJANG</p>
+        </div>
+      </div>
+      <ul class="hidden md:flex space-x-8 font-medium text-primary">
+        <li><a href="#" class="hover:text-secondary">Home</a></li>
+        <li><a href="#" class="hover:text-secondary">Profil</a></li>
+        <li><a href="#" class="hover:text-secondary">Akademik</a></li>
+        <li><a href="#" class="hover:text-secondary">Alumni</a></li>
+        <li><a href="#" class="hover:text-secondary">Career App</a></li>
+        <li><a href="#" class="hover:text-secondary">Contact</a></li>
+      </ul>
+      <button class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative w-full h-screen flex items-center pt-24">
+    <img src="hero-berita.png" class="absolute inset-0 w-full h-full object-cover" alt="Hero Image" />
+
+    <!-- Gradiasi BG White -->
+    <div class="absolute inset-x-0 bg-gradient-to-t from-white/95 to-white/10 h-2/4 bottom-0"></div>
+
+    <div class="relative mx-auto w-full items-center">
+        <h1 class="text-5xl md:text-6xl font-extrabold text-primary text-center">
+          Berita <br />
+        </h1>
+    </div>
+  </section>
+
+  <section class="bg-white py-12 px-4 md:px-8 lg:px-16">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl font-bold text-gray-800 mb-8">Berita</h2>
+
+    <!-- Grid Berita -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Kartu Berita -->
+      <div class="bg-gray-50 rounded-lg shadow hover:shadow-md transition p-4">
+        <img src="hero-berita.png" alt="Berita 1" class="w-full h-48 object-cover rounded-md mb-4">
+        <p class="text-sm text-gray-500 mb-1">13 November 2025</p>
+        <h3 class="text-base font-semibold text-gray-800 mb-2">Tim pengabdian Polinema Kembangkan Sistem Digital untuk Optimalkan Event Bersepeda</h3>
+        <p class="text-sm text-gray-600">Malang – Tim dosen Politeknik Negeri Malang (Polinema) mengembangkan sistem digital untuk mengoptimalkan pengelolaan event bersepeda...</p>
+      </div>
+
+      <!-- Duplikat 5 kartu lainnya -->
+      <div class="bg-gray-50 rounded-lg shadow hover:shadow-md transition p-4">
+        <img src="hero-berita.png" alt="Berita 2" class="w-full h-48 object-cover rounded-md mb-4">
+        <p class="text-sm text-gray-500 mb-1">13 November 2025</p>
+        <h3 class="text-base font-semibold text-gray-800 mb-2">Tim pengabdian Polinema Kembangkan Sistem Digital untuk Optimalkan Event Bersepeda</h3>
+        <p class="text-sm text-gray-600">Malang – Tim dosen Politeknik Negeri Malang (Polinema) mengembangkan sistem digital untuk mengoptimalkan pengelolaan event bersepeda...</p>
+      </div>
+
+      <div class="bg-gray-50 rounded-lg shadow hover:shadow-md transition p-4">
+        <img src="hero-berita.png" alt="Berita 2" class="w-full h-48 object-cover rounded-md mb-4">
+        <p class="text-sm text-gray-500 mb-1">13 November 2025</p>
+        <h3 class="text-base font-semibold text-gray-800 mb-2">Tim pengabdian Polinema Kembangkan Sistem Digital untuk Optimalkan Event Bersepeda</h3>
+        <p class="text-sm text-gray-600">Malang – Tim dosen Politeknik Negeri Malang (Polinema) mengembangkan sistem digital untuk mengoptimalkan pengelolaan event bersepeda...</p>
+      </div>
+
+
+
+    </div>
+
+    <!-- Tombol Tampilkan Lebih Banyak -->
+    <div class="mt-10 text-center">
+      <button class="px-6 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition">
+        Tampilkan lebih banyak ...
+      </button>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+<footer class="bg-primary text-white pt-12 pb-6 px-4 md:px-8 lg:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Kolom 1: Logo + Sosial Media -->
+    <div>
+      <!-- Logo -->
+      <div class="mb-4 md:mask-contain">
+        <img src="logo-footer.png" alt="Logo Polinema" class=" md:h-20 lg:h-40 w-auto">
+      </div>
+      <!-- Ikuti Kami -->
+      <h3 class="text-lg font-semibold mb-4">Ikuti kami:</h3>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-whatsapp text-xl"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter text-xl"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook text-xl"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram text-xl"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fas fa-envelope text-xl"></i></a>
+      </div>
+    </div>
+
+    <!-- Kolom 2: Navigasi -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+        <li><a href="#" class="hover:underline">Klien Kami</a></li>
+        <li><a href="#" class="hover:underline">Kebijakan Privasi</a></li>
+        <li><a href="#" class="hover:underline">Ketentuan Kami</a></li>
+        <li><a href="#" class="hover:underline">Hubungi Kami</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Lokasi -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Lokasi</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.6240478163772!2d113.24019817455954!3d-8.139700581504718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd667609cb4bd39%3A0xa38484bf8f293e32!2sPolinema%20Kampus%20Lumajang!5e0!3m2!1sid!2sid!4v1764555169908!5m2!1sid!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p class="text-sm mt-2">Widyawisda, Karang Semanding, Kepuharjo, Lumajang, Jawa Timur 67316</p>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="mt-8 text-right text-xs text-gray-300 justify-end">
+    © 2025 dibuat oleh kelompok 2
+  </div>
+</footer>
+</body>
+
+</html>
